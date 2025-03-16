@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FONT AWESOME -->
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Portfolio</title>
+    </head>
+    
+<body>
+    <!-- HEADER DESIGN-->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+     </header>
+     <!-- HOME SECTION DESIGN-->
+      <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi, Myself</h3>
+        <h1>Avichal Agarwal</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus ipsam eum ipsum recusandae minus facilis eius est quibusdam, veritatis harum nihil nisi, incidunt expedita sit.</p>
+        <div class="social-media">
+         <a href="https://www.facebook.com/avichal.agarwal.9"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://twitter.com/agarwal_avichal"><i class="fa-brands fa-twitter"></i></a>
+         <a href="https://www.instagram.com/avichal____agarwal/"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/in/avichal-agarwal-79b848277"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+        
+        <a href="avichalcv25.pdf" download="avichalcv25.pdf" class="btn">Download CV</a>
+
+    </div>
+    <div class="home-img">
+        <img src="11zon_cropped.png" alt="">
+    </div>
+    </section>
+
+    <!-- ABOUT SECTION DESIGN-->
+   <section class="about" id="about">
+        <div class="about-img">
+            <img src="2211790.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            
+            <p id="shortText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa        aaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p id="moreText" style="display: none;">Ab commodi pariatur nobis, aliquid tempora obcaecati inventore voluptatem incidunt ea accusamus reprehenderit dolore! Amet quod eos, tempore, est vel placeat labore voluptatem neque ab ex voluptate. Aliquam esse tenetur quia ex voluptatum, possimus laborum architecto sunt consequuntur voluptatem. Incidunt, natus esse!</p>
+        <a  class="btn" id="readMoreBtn" onclick="toggleReadMore()">Read More</a>
+        </div>
+     </section>
+     <!-- SERVICES SECTION DESIGN-->
+     <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+    
+        <div class="services-container">
+            <!-- Web Development -->
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="extra-text" style="display: none;">
+                        I specialize in building dynamic, responsive, and user-friendly websites using the latest technologies.
+                    </span>
+                </p>
+                <a href="#" class="btn" onclick="toggleText(event, this)">Read More</a>            
+            </div>
+    
+            <!-- UI/UX Designing -->
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="extra-text" style="display: none;">
+                        I create intuitive, engaging, and aesthetically pleasing designs that enhance user experience.
+                    </span>
+                </p>
+                <a href="#" class="btn" onclick="toggleText(event, this)">Read More</a>            
+            </div>
+    
+            <!-- Python Development -->
+            <div class="services-box">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python Development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="extra-text" style="display: none;">
+                        I develop efficient and scalable Python applications, including automation and data analysis projects.
+                    </span>
+                </p>
+                <a href="#" class="btn" onclick="toggleText(event, this)">Read More</a>            
+            </div>
+        </div>
+    </section>
+      <!-- PORTFOLIO SECTION DESIGN-->
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+    
+            <!-- Project 1 -->
+            <div class="portfolio-box">
+                <img src="img1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://github.com/yourgithub/project1" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="portfolio-box">
+                <img src="img2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://github.com/yourgithub/project2" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="portfolio-box">
+                <img src="img3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://github.com/yourgithub/project3" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Project 4 -->
+            <div class="portfolio-box">
+                <img src="img4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://github.com/yourgithub/project4" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Project 5 -->
+            <div class="portfolio-box">
+                <img src="img4.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://github.com/yourgithub/project5" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Project 6 -->
+            <div class="portfolio-box">
+                <img src="img6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://github.com/yourgithub/project6" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    >
+       <!--CONTACT SECTION DESIGN-->
+       <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+    
+        <!-- Contact Form -->
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    
+        <!-- Personal Details Section -->
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><i class="fa-solid fa-phone"></i> <b>+91 8948582553</b></p>
+            <p><i class="fa-solid fa-envelope"></i> <b>2k22.aiml.2211790@gmail.com</b></p>
+            <p><i class="fa-solid fa-location-dot"></i> <b>Kanpur, Uttar Pradesh, India</b></p>
+            <p>
+                <i class="fa-brands fa-linkedin"></i> 
+                <a href="https://www.linkedin.com/in/avichal-agarwal-79b848277" target="_blank"><b>LinkedIn Profile</b></a>
+            </p>
+        </div>
+    </section>
+    
+    
+
+       <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by @AvichalAgarwal | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+       </footer>
+
+       
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+       
+<!--MAIN JS-->
+    <script src="script.js"></script>
+</body>
+</html>
